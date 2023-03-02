@@ -145,7 +145,7 @@ def bootstrap(data, num_iter):
                     (1 - T_sample) * Y_sample / (1 - e_x)).mean())
 
         if (i + 1) % 10 == 0:
-            pd.DataFrame(data=ATE).to_csv('bootstrap_ate_300.csv')
+            pd.DataFrame(data=ATE).to_csv('bootstrap_ate.csv')
 
         print(f"Iteration {i + 1} ended at ",
               datetime.now().strftime("%H:%M:%S"))
